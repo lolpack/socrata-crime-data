@@ -28,7 +28,7 @@ var HeatmapView = Backbone.View.extend({
       }
     });
   },
-  _makeChart: function (chartEl, data) {
+  makeChart: function (chartEl, data) {
     var xy_chart = d3_xy_chart()
       .width(500)
       .height(300)
@@ -210,8 +210,8 @@ var HeatmapView = Backbone.View.extend({
     var formatted2012 = this.formatCollection(this.data2012);
     var formatted2015 = this.formatCollection(this.data2015);
 
-    this._makeChart('.chart-2012', this.makeNestData(formatted2012));
-    this._makeChart('.chart-2015', this.makeNestData(formatted2015));
+    this.makeChart('.chart-2012', this.makeNestData(formatted2012));
+    this.makeChart('.chart-2015', this.makeNestData(formatted2015));
   }
 });
 

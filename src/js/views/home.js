@@ -21,9 +21,7 @@ var HomeView = Backbone.View.extend({
   },
 
   render: function() {
-    this.$el.html(template(
-      {name: 'Hello World'}
-    ));
+    this.$el.html(template());
 
     this.initializeChildViews()
   }
