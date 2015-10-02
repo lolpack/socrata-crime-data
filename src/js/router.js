@@ -1,5 +1,6 @@
 var Backbone = require('backbone');
 var HomeView = require('./views/home');
+var CrimesCollection = require('./collections/crimes');
 
 var Router = Backbone.Router.extend({
   routes: {
@@ -8,11 +9,13 @@ var Router = Backbone.Router.extend({
 
   initialize: function() {
     Backbone.history.start();
-  },
-
-  default: function() {
-    var view = new HomeView();
-    view.render();
+    this.crimesCollection = new CrimesCollection();
+    this.crimesCollection.fetch({
+      success: function (data) {
+        var view = new HomeView({ collection: data });
+        view.render();
+      }
+    });
   }
 });
   

@@ -11,6 +11,8 @@
     "backbone": "^1.1.2",
     "bootstrap": "^3.3.5",
     "browser-sync": "^1.3.5",
+    "d3": "^3.5.6",
+    "google-maps": "^3.1.0",
     "gulp": "^3.7.0",
     "gulp-browserify": "^0.5.0",
     "gulp-concat": "^2.2.0",
@@ -18,7 +20,9 @@
     "handlebars": "^1.3.0",
     "hbsfy": "^2.1.0",
     "jquery": "^2.1.1",
-    "jquery-easing": "0.0.1"
+    "jquery-easing": "0.0.1",
+    "leaflet": "^0.7.5",
+    "lodash": "^3.10.1"
   },
   "repository": {
     "type": "git",
