@@ -1,7 +1,6 @@
 var $ = require('jquery');
 var Backbone = require('backbone');
 var template = require('../templates/heat-map.hbs');
-var _ = require('lodash');
 
 var GoogleMapsLoader = require('google-maps');
 var GMapsConfig = require('../maps-helpers/gmaps-config');
