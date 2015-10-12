@@ -209,9 +209,10 @@ var HeatmapView = Backbone.View.extend({
     this.$el.html(template());
     var formatted2012 = this.formatCollection(this.data2012);
     var formatted2015 = this.formatCollection(this.data2015);
-
-    this.makeChart('.chart-2012', this.makeNestData(formatted2012));
-    this.makeChart('.chart-2015', this.makeNestData(formatted2015));
+    
+    // TODO: Fix charts
+    // this.makeChart('.chart-2012', this.makeNestData(formatted2012));
+    // this.makeChart('.chart-2015', this.makeNestData(formatted2015));
   }
 });
 

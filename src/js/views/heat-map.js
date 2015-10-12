@@ -38,9 +38,7 @@ var HeatMapView = Backbone.View.extend({
     return heatMapHash
   },
   render: function() {
-    this.$el.html(template(
-      {map: 'Hello World'}
-    ));
+    this.$el.html(template());
 
     this.drawMap()
   }
